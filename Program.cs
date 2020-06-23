@@ -11,7 +11,7 @@ namespace netcore.cleanarch
       if (args == null || args.Length != 2)
       {
         Console.WriteLine("Incorrect Syntax");
-        Console.WriteLine("Usage: cleanarch <SolutionName> <ProjectPrefix");
+        Console.WriteLine("Usage: cleanarch <SolutionName> <ProjectPrefix>");
         Console.WriteLine("e.g., cleanarch FaisalsBlog Blog");
         return;
       }
