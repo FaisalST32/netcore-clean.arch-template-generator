@@ -12,7 +12,7 @@ To use, simply clone the repository and in the root folder run the following com
 dotnet tool update --global --add-source ./nupkg netcore.cleanarch
 ```
 
-You can then run the following command to create a Project in your preferred repository
+You can then run the following command to create a Project in your preferred directory
 
 ```
 cleanarch <SolutionName> <ProjectPrefix>
