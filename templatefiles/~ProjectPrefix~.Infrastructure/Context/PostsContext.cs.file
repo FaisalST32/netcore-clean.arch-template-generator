@@ -1,0 +1,16 @@
+﻿using Microsoft.EntityFrameworkCore;
+using ~ProjectPrefix~.Application.Repositories;
+using ~ProjectPrefix~.Infrastructure.Entities;
+using System;
+
+namespace ~ProjectPrefix~.Infrastructure.Context
+{
+    public class ~ProjectPrefix~Context : DbContext
+    {
+        public ~ProjectPrefix~Context(DbContextOptions options) : base(options)
+        {
+            
+        }
+        public DbSet<Post> Posts { get; set; }
+    }
+}

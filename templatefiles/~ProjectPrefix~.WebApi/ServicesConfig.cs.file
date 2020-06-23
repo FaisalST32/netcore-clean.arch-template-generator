@@ -1,0 +1,19 @@
+﻿using Microsoft.Extensions.DependencyInjection;
+using ~ProjectPrefix~.Application.Services.Posts;
+using ~ProjectPrefix~.Services.Application.Posts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ~ProjectPrefix~.WebApi
+{
+    public static class ServicesConfig
+    {
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+        {
+            services.AddTransient<IPostsService, PostsService>();
+            return services;
+        }
+    }
+}

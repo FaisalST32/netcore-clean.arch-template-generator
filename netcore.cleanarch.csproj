@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>cleanarch</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="templatefiles\~ProjectPrefix~.Application\Repositories\IPostsRepository.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Application\Services\Posts\IPostsService.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Application\Services\Posts\PostsService.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Application\~ProjectPrefix~.Application.csproj.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Common\Data\IUnitOfWork.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Common\~ProjectPrefix~.Common.csproj.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Domain\Posts\Post.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Domain\~ProjectPrefix~.Domain.csproj.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Infrastructure\Context\PostsContext.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Infrastructure\Entities\Post.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Infrastructure\Mapper\InfraMapping.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Infrastructure\Repositories\PostsRepository.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Infrastructure\UnitOfWork.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.Infrastructure\~ProjectPrefix~.Infrastructure.csproj.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\appsettings.Development.json.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\appsettings.json.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\Controllers\PostsController.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\DTOs\Posts\CreatePostDto.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\MapperConfig.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\Mapper\ApiMapping.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\Program.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\Properties\launchSettings.json.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\RepositoriesConfig.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\ServicesConfig.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\Startup.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\Utilities\WebApi\StatusCodeExtension.cs.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~ProjectPrefix~.WebApi\~ProjectPrefix~.WebApi.csproj.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="templatefiles\~SolutionPrefix~.sln.file">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

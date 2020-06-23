@@ -1,0 +1,25 @@
+﻿using AutoMapper;
+using Microsoft.Extensions.DependencyInjection;
+using ~ProjectPrefix~.Infrastructure.Mapper;
+using ~ProjectPrefix~.WebApi.Mapper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ~ProjectPrefix~.WebApi
+{
+    public static class MapperConfig
+    {
+        public static IServiceCollection AddMapperConfiguration(this IServiceCollection services)
+        {
+            var mapperConfig = new MapperConfiguration(mc => {
+                mc.AddProfile(new ApiMapping());
+                mc.AddProfile(new InfraMapping());
+            });
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+            return services;
+        }
+    }
+}

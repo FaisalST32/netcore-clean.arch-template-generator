@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\~ProjectPrefix~.Common\~ProjectPrefix~.Common.csproj" />
+    <ProjectReference Include="..\~ProjectPrefix~.Domain\~ProjectPrefix~.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

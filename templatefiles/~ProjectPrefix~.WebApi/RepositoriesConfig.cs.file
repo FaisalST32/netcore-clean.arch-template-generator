@@ -1,0 +1,21 @@
+﻿using AutoMapper;
+using Microsoft.Extensions.DependencyInjection;
+using ~ProjectPrefix~.Application.Repositories;
+using ~ProjectPrefix~.Infrastructure.Repositories;
+using ~ProjectPrefix~.WebApi.Mapper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ~ProjectPrefix~.WebApi
+{
+    public static class RepositoriesConfig
+    {
+        public static IServiceCollection AddRepositories(this IServiceCollection services)
+        {
+            services.AddTransient<IPostsRepository, PostsRepository>();
+            return services;
+        }
+    }
+}
