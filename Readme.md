@@ -9,7 +9,7 @@
 To use, simply clone the repository and in the root folder run the following command to install the tool globally
 
 ```
-dotnet tool update --global --add-source ./nupkg netcore.cleanarch
+dotnet tool install --global --version 1.0.0 --add-source ./nupkg netcore.cleanarch
 ```
 
 You can then run the following command to create a Project in your preferred directory
